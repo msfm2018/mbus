@@ -5,72 +5,9 @@ All notable changes to the mbus package will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [1.0.0] - 2024-01-15
 
-### Added
-- Initial stable release of mbus event bus library
-- Comprehensive English documentation for all modules
-- Module-based event bus implementation (mEvent)
-- Simple global event bus implementation (mSimpleEvent)
-- Debug logging utility (mDebugDebug) with emoji indicators
-- Complete API reference documentation
-- Usage examples and best practices guide
-- Troubleshooting guide for common issues
-- Performance optimization recommendations
-- Support for Flutter SDK >=1.17.0
-- Support for Dart SDK >=3.0.6
-- Pub.dev publishing metadata and topics
-- MIT License
 
-### Features
-- **mSimpleEvent**: Global event bus for lightweight applications
-  - Event registration and unregistration
-  - Event triggering with data payload
-  - Listener cleanup and full bus clearing
-  
-- **mEvent**: Module-based event bus for complex applications
-  - Module-level event organization
-  - Event namespace isolation
-  - UUID tracking for event triggers
-  - Duplicate event registration prevention
-  - Module-level cleanup
-  
-- **mDebugDebug**: Debug logging utility
-  - Emoji indicators for operation types
-  - ISO8601 timestamps
-  - Debug mode integration with kDebugMode
-  - Selective logging with isEnabled flag
-
-### Documentation
-- Complete README.md with quick start guide
-- API reference for all public classes and methods
-- Usage patterns and examples
-- Best practices and recommendations
-- Troubleshooting section
-- Performance considerations
-
-### Quality
-- Zero external dependencies (only Flutter)
-- Type-safe implementation using Dart type system
-- Comprehensive inline documentation
-- Analysis options configured for code quality
-
-### Breaking Changes
-None (initial release)
-
-### Deprecated
-None
-
-### Removed
-None
-
-### Fixed
-None
-
-### Security
-None reported
-
-## [0.1.1] - 2025-05-19
+## [0.1.1] - 2026-06-03
 
 ### Added
 - Initial project setup
