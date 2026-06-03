@@ -1,6 +1,6 @@
 name: mbus
 description: A lightweight and efficient event bus system for Flutter applications. Provides simple event-driven architecture with support for module-based event management and global event broadcasting.
-version: 1.0.0
+version: 0.1.1
 homepage: https://github.com/msfm2018/mbus
 repository: https://github.com/msfm2018/mbus
 issue_tracker: https://github.com/msfm2018/mbus/issues
