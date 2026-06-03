@@ -1,4 +1,4 @@
-import 'package:mbus/m_bus.dart';
+import 'package:mbus/mbus.dart';
 
 void main() {
   // mSimpleEvent 示例
