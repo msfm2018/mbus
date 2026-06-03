@@ -1,24 +1,24 @@
-import 'package:mbus/m_bus.dart';
+import 'package:mbus/mbus.dart';
 
 void main() {
-  // mSimpleEvent 示例
-  print('--- mSimpleEvent 示例 ---');
+  // mSimpleEvent example
+  print('--- mSimpleEvent Example ---');
   mSimpleEvent.putEventListen(1, (eventID, data) {
-    print('mSimpleEvent 收到事件 $eventID，数据：$data');
+    print('mSimpleEvent received event $eventID, data: $data');
   });
 
   mSimpleEvent.executeEvent(1, {'message': 'Hello from mSimpleEvent!'});
   mSimpleEvent.removeEventListen(1);
   mSimpleEvent.clearAll();
 
-  // mEvent 示例
-  print('\n--- mEvent 示例 ---');
+  // mEvent example
+  print('\n--- mEvent Example ---');
   mEvent.putEventListen('moduleA', 101, (eventID, uuid, data) {
-    print('mEvent (moduleA) 收到事件 $eventID，UUID: $uuid, 数据：$data');
+    print('mEvent (moduleA) received event $eventID, UUID: $uuid, data: $data');
   });
 
   mEvent.putEventListen('moduleB', 102, (eventID, uuid, data) {
-    print('mEvent (moduleB) 收到事件 $eventID，UUID: $uuid, 数据：$data');
+    print('mEvent (moduleB) received event $eventID, UUID: $uuid, data: $data');
   });
 
   mEvent.executeModuleEvent('moduleA', 101, 'uuid-123', {'message': 'Hello from moduleA!'});
